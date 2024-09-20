@@ -6,10 +6,10 @@ function counter(number, direction) {
       console.log(current)
       if (direction === 'increment' && current < number) {
         current++
-        setTimeout(updateCounter, 1000)
+        setTimeout(updateCounter, 300)
       } else if (direction === 'decrement' && current > 0) {
         current--
-        setTimeout(updateCounter, 1000)
+        setTimeout(updateCounter, 300)
       } else {
         resolve(current)
       }
